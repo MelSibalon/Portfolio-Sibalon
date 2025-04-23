@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL PORTFOLIO</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./stars.css">
+    <link rel="stylesheet" type="text/css" href="./media.css">
+    <link rel="stylesheet" type="text/css" href="./keyframes.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+    <header>
+        <h1 class="title">PORTFOLIO</h1>
+        <ul class="navlist">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./portfolio.html">WORKS</a></li>
+        </ul>
+    </header>
+
+    <div class="portfolio" id="works">
+        <div class="glass-container">
+            <div class="buttons">
+                <h2 onclick="showCategory('projects')">PROJECTS</h2>
+                <h2 onclick="showCategory('arts')">ARTS</h2>
+                <h2 onclick="showCategory('photography')">PHOTOGRAPHY</h2>
+            </div>
+        </div>
+
+        <div class="glass-container">
+            <h3>Past Projects</h3>
+            <div id="projects" class="image-container">
+                <div class="project-item" onclick="showProjectDetails('Calendar (JAVA)', [
+                    './assets/project1/Screenshot (280).png', 
+                    './assets/project1/Screenshot (281).png', 
+                    './assets/project1/Screenshot (282).png', 
+                    './assets/project1/Screenshot (285).png'
+                ], 'This is a calendar group project made using Java. It is a event calendar where you can input notes on the date')">
+                   
+                    <img src="./assets/project1/Screenshot (280).png" alt="Project 1">
+                    <h3>Calendar</h3>
+                </div>
+
+                <!-- MS Pet Store Project -->
+                <div class="project-item" onclick="showProjectDetails('MS Pet Store (HTML/CSS/JS)', [
+                    './assets/project2/Screenshot (269).png', 
+                    './assets/project2/Screenshot (270).png', 
+                    './assets/project2/Screenshot (271).png',
+                    './assets/project2/Screenshot (272).png', 
+                    './assets/project2/Screenshot (273).png'
+                ], 'This is an e-commerce website built using HTML, CSS, and JavaScript.')">
+                    
+                    <img src="./assets/project2/Screenshot (269).png" alt="Project 2">
+                    <h3>MS Pet Store</h3>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item" onclick="showProjectDetails('Anime Recommendation (HTML/CSS/JS)', [
+                    './assets/project3/Screenshot (274).png',
+                    './assets/project3/Screenshot (275).png',
+                    './assets/project3/Screenshot (276).png',
+                    './assets/project3/Screenshot (277).png',
+                    './assets/project3/Screenshot (278).png',
+                    './assets/project3/Screenshot (279).png'
+                ], 'A website that shows a list of anime with description, pic, ratings')">
+                    
+                    <img src="./assets/project3/Screenshot (274).png" alt="Project 3">
+                    <h3>Anime Recommendation</h3>
+                </div>
+                <div class="project-item" onclick="showProjectDetails('Library Register System (HTML/CSS/JS/SQL)', [
+                    './assets/project4/Screenshot (291).png',
+                    './assets/project4/Screenshot (292).png',
+                    './assets/project4/Screenshot (293).png',
+                    './assets/project4/Screenshot (294).png',
+                    './assets/project4/Screenshot (295).png',
+                    './assets/project4/Screenshot (296).png',
+                    './assets/project4/Screenshot (297).png'
+                ], 'This system register a user that wants to borrow a book in the library, it can even import the data to excel')">
+                    
+                    <img src="./assets/project4/Screenshot (291).png" alt="Project 4">
+                    <h3>Library Register System</h3>
+                </div>
+                <div class="project-item" onclick="showProjectDetails('Shadow Resurrection (JAVA)', [
+                    './assets/project5/Screenshot (286).png',
+                    './assets/project5/Screenshot (287).png',
+                    './assets/project5/Screenshot (288).png',
+                    './assets/project5/Screenshot (289).png',
+                    './assets/project5/Screenshot (290).png'
+                ], 'A 2d action game where you need to defeat monsters and clear the obstacle to move to another level')">
+                    
+                    <img src="./assets/project5/Screenshot (286).png" alt="Project 5">
+                    <h3>Shadow Resurrection</h3>
+                </div>
+                <div class="project-item" onclick="showProjectDetails('Library Register System (HTML/CSS/JS/SQL/PHP)', [
+                    './assets/project6/Screenshot (298).png',
+                    './assets/project6/Screenshot (299).png',
+                    './assets/project6/Screenshot (300).png',
+                    './assets/project6/Screenshot (301).png',
+                    './assets/project6/Screenshot (302).png',
+                    './assets/project6/Screenshot (303).png',
+                    './assets/project6/Screenshot (304).png',
+                    './assets/project6/Screenshot (305).png',
+                    './assets/project6/Screenshot (306).png',
+                    './assets/project6/Screenshot (307).png',
+                    './assets/project6/Screenshot (308).png'
+                ], 'A library system where you can check if the books are available and show the details of the books')">
+                    
+                    <img src="./assets/project6/Screenshot (298).png" alt="Project 6">
+                    <h3>Library System</h3>
+                </div>
+                <div class="project-item" onclick="showProjectDetails('Portfolio (HTML/CSS/JS)', [
+                './assets/project7/portfolio1.png',
+                './assets/project7/portfolio2.png',
+                './assets/project7/portfolio3.png',
+                './assets/project7/portfolio4.png'
+            ], 'A simple portfolio website')">
+            
+            <img src="./assets/project7/portfolio1.png" alt="Project 7">
+            <h3>Portfolio</h3>
+            </div>
+            <div class="project-item" onclick="showProjectDetails('Student Attendance Management System (HTML/CSS/JS/PYTHON/FLASK/SQL)', [
+            './assets/project8/Picture3.png',
+            './assets/project8/picture (2).png',
+            './assets/project8/picture (1).png',
+            './assets/project8/picture (3).png',
+            './assets/project8/picture (4).png',
+            './assets/project8/picture (5).png',
+            './assets/project8/picture (6).png',
+            './assets/project8/picture (7).png',
+            './assets/project8/picture (8).png',
+            './assets/project8/picture (9).png',
+            './assets/project8/picture (10).png',
+            './assets/project8/picture (11).png'
+        ], 'A system that records students attendance, it also integrated with qr code for students to scan for attendance and have middleware for mail')">
+            <img src="./assets/project8/Picture3.png" alt="Project 8">
+            <h3>Student Attendance Management System</h3>
+            </div>
+
+            <div class="project-item" onclick="showProjectDetails('MS SportGanizer (HTML/CSS/JS/PYTHON/DJANGO/SQL)', [
+                './assets/project9/Screenshot (250).png',
+                './assets/project9/Screenshot (251).png',
+                './assets/project9/Screenshot (252).png',
+                './assets/project9/Screenshot (253).png',
+                './assets/project9/Screenshot (254).png',
+                './assets/project9/Screenshot (255).png',
+                './assets/project9/Screenshot (256).png',
+                './assets/project9/Screenshot (257).png',
+                './assets/project9/Screenshot (258).png',
+                './assets/project9/Screenshot (259).png',
+                './assets/project9/Screenshot (260).png',
+                './assets/project9/Screenshot (261).png',
+                './assets/project9/Screenshot (262).png',
+                './assets/project9/Screenshot (263).png',
+                './assets/project9/Screenshot (264).png',
+                './assets/project9/Screenshot (265).png',
+
+            ], 'A sport management system, can manage the user, sports, teams, leagues registered in the system with CRUD function')">
+                
+                <img src="./assets/project9/Screenshot (250).png" alt="Project 9">
+                <h3>MS SportGanizer</h3>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal for Project Album -->
+        <div id="projectModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <div id="modalImagesContainer" class="modal-images-grid"></div>
+                
+            </div>
+        </div>
+
+        <div class="glass-container">
+            <h3>Arts</h3>
+            <div id="arts" class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./assets/arts/art2.jpg" alt="Art 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/arts/art3.jpg" alt="Art 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/arts/art4.jpg" alt="Art 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/arts/art5.png" alt="Art 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/arts/art1.jpg" alt="Art 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/arts/art6.jpg" alt="Art 6">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/arts/art7.jpg" alt="Art 7">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/arts/art8.jpg" alt="Art 8">
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-container">
+            <h3>Photography</h3>
+            <div id="photography" class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./assets/photography/pic (1).jpg" alt="Photo 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/photography/pic (2).jpg" alt="Photo 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/photography/pic (3).jpg" alt="Photo 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/photography/pic (4).jpg" alt="Photo 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/photography/pic (5).jpg" alt="Photo 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/photography/pic (6).jpg" alt="Photo 6">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/photography/pic (7).jpg" alt="Photo 7">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/photography/pic (8).jpg" alt="Photo 8">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/photography/pic (9).jpg" alt="Photo 9">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/photography/pic (10).jpg" alt="Photo 10">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/photography/pic (11).jpg" alt="Photo 11">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/photography/pic (12).jpg" alt="Photo 12">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/photography/pic (14).jpg" alt="Photo 13">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/photography/pic (15).jpg" alt="Photo 14">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/photography/pic (18).jpg" alt="Photo 18">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/photography/pic (23).jpg" alt="Photo 23">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
